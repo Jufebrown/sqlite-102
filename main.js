@@ -14,7 +14,7 @@ const dropEmployees = () => {
 
 // Create a table titled employees with the following columns:
 // id, firstName, lastName, jobTitle, address
-db.run(`CREATE TABLE IF NOT EXISTS employees (id INT PRIMARY KEY, firstName TEXT, lastName TEXT, jobTitle TEXT, address TEXT)`)
+db.run(`CREATE TABLE IF NOT EXISTS employees (id INTEGER PRIMARY KEY AUTOINCREMENT, firstName TEXT, lastName TEXT, jobTitle TEXT, address TEXT)`)
 
 // Create an array of at least 6 objects. Each object should have a key value pair matching each column name in the employees table.
 let employeeArray = [
@@ -33,13 +33,13 @@ const populateEmployees = () => {
       null,
       "${each.firstName}",
       "${each.lastName}",
-      ${each.jobTitle},
+      "${each.jobTitle}",
       "${each.address}"
     )`)
   })
 }
 
-populateEmployees()
+// populateEmployees()
 
 // Write a statement to query the database and console.log() all employee records.
 
