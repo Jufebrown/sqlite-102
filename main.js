@@ -39,7 +39,10 @@ const populateEmployees = () => {
   })
 }
 
+populateEmployees()
+
 // Write a statement to query the database and console.log() all employee records.
+
 
 // Write a statement to query the database and console.log() each employees jobTitle.
 
