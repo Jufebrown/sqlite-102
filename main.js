@@ -42,31 +42,37 @@ const populateEmployees = () => {
 // populateEmployees()
 
 // Write a statement to query the database and console.log() all employee records.
-db.all(`SELECT * FROM employees`, (err, allRows) => {
-  if (err) {
-    return console.log(err.toString())
-  }
-  // console.log('row', row)
+// db.all(`SELECT * FROM employees`, (err, allRows) => {
+//   if (err) {
+//     return console.log(err.toString())
+//   }
+//   // console.log('row', row)
 
-  // allRows.forEach(({id, first, last, department, salary}) => {
-  //   console.log(`
-  //     ${id} ${first} ${last}
-  //     from ${department} Department.
-  //     Salary: ${salary}
-  //   `)
-  // })
-  // let result = allRows.filter(each => each.salary > 50000)
+//   // allRows.forEach(({id, first, last, department, salary}) => {
+//   //   console.log(`
+//   //     ${id} ${first} ${last}
+//   //     from ${department} Department.
+//   //     Salary: ${salary}
+//   //   `)
+//   // })
+//   // let result = allRows.filter(each => each.salary > 50000)
 
-  console.log(allRows)
+//   console.log(allRows)
 
-})
+// })
 
 // Write a statement to query the database and console.log() each employees jobTitle.
-db.each(`SELECT jobTitle FROM employees`, (err, row) => {
+// db.each(`SELECT jobTitle FROM employees`, (err, row) => {
+//   if (err) {
+//     return console.log(err.toString())
+//   }
+//   console.log(row)
+// })
+
+// Write a statement to query the database and console.log() each employees firstName, lastName and address only.
+db.each(`SELECT firstName, lastName, address FROM employees`, (err, row) => {
   if (err) {
     return console.log(err.toString())
   }
   console.log(row)
 })
-
-// Write a statement to query the database and console.log() each employees firstName, lastName and address only.
