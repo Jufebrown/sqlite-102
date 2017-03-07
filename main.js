@@ -62,5 +62,11 @@ db.all(`SELECT * FROM employees`, (err, allRows) => {
 })
 
 // Write a statement to query the database and console.log() each employees jobTitle.
+db.each(`SELECT jobTitle FROM employees`, (err, row) => {
+  if (err) {
+    return console.log(err.toString())
+  }
+  console.log(row)
+})
 
 // Write a statement to query the database and console.log() each employees firstName, lastName and address only.
