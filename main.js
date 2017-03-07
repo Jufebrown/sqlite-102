@@ -16,12 +16,12 @@ db.run(`CREATE TABLE IF NOT EXISTS employees (id INT PRIMARY KEY, firstName TEXT
 
 // Create an array of at least 6 objects. Each object should have a key value pair matching each column name in the employees table.
 let array = [
-  { id: 0, firstName: 'Fred', lastName: 'Flintstone', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
-  { id: 0, firstName: 'Wilma', lastName: 'Flintstone', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
-  { id: 0, firstName: 'Chloe', lastName: 'Catherine', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
-  { id: 0, firstName: 'Sam', lastName: 'Gamgee', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
-  { id: 0, firstName: 'Chuck', lastName: 'Doggert', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
-  { id: 0, firstName: 'Matt', lastName: 'Smith', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
+  {id: 0, firstName: 'Fred', lastName: 'Flintstone', jobTitle: 'Crane Operator', address: '1 Bedrock Way'},
+  {id: 0, firstName: 'Wilma', lastName: 'Flintstone', jobTitle: 'Homemaker', address: '1 Bedrock Way'},
+  {id: 0, firstName: 'Chloe', lastName: 'Catherine', jobTitle: 'Lounger', address: '513 Stacy Square'},
+  {id: 0, firstName: 'Sam', lastName: 'Gamgee', jobTitle: 'Mouser', address: '513 Stacy Square'},
+  {id: 0, firstName: 'Chuck', lastName: 'Doggert', jobTitle: 'Panter', address: '9970 Welty Rd'},
+  {id: 0, firstName: 'Matt', lastName: 'Smith', jobTitle: 'Doctor', address: '1 Milky Way'},
 ]
 
 
